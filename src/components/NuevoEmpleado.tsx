@@ -2,7 +2,7 @@ import { ChangeEvent, useState } from "react"
 import { appsettings } from "../settings/appsettings"
 import { useNavigate } from "react-router-dom"
 import Swal from "sweetalert2"
-import { IEmpleado } from "../Interfaces/Iempleado"
+import { IEmpleado } from "../Interfaces/IEmpleado"
 import { Container, Row, Form, FormGroup, Label, Input, Button, Col } from "reactstrap"
 
 const initialEmpleado = {
@@ -19,7 +19,6 @@ export function NuevoEmpleado(){
     const inputChangeValue= (event: ChangeEvent<HTMLInputElement>)=>{
         const inputName = event.target.name;
         const inputValue = event.target.value;
-        console.log(inputName, "", inputValue);
 
         setEmpleado({...empleado,[inputName]: inputValue })
     }
