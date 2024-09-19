@@ -42,7 +42,22 @@ export function EditarEmpleado(){
         setEmpleado({...empleado,[inputName]: inputValue })
     }
 
+    const verificarDatosVacios = () => {
+        if (empleado.nombre === "" || empleado.correo === "" || empleado.sueldo <= 0) {
+            Swal.fire({
+                title: "Error!",
+                text: "Todos los campos deben estar llenos.",
+                icon: "error"
+            });
+            return false; // Indica que los datos no son válidos
+        }
+        return true; // Indica que los datos son válidos
+    }
+
     const guardar= async ()=>{
+        if(!verificarDatosVacios()){
+            return;
+        }
         const response = await fetch(`${appsettings.apiUrl}Empleado/Editar`, {
             method:'PUT',
             headers:{
@@ -66,6 +81,9 @@ export function EditarEmpleado(){
         navigate("/")
     }
 
+
+
+    
     return (
         <Container className="mt-5">
             <Row>
