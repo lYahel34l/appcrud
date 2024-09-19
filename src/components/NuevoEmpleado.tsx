@@ -16,6 +16,7 @@ export function NuevoEmpleado(){
     const navigate = useNavigate();
 
 
+
     const inputChangeValue= (event: ChangeEvent<HTMLInputElement>)=>{
         const inputName = event.target.name;
         const inputValue = event.target.value;
