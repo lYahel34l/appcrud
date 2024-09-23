@@ -54,6 +54,10 @@ export function EditarEmpleado(){
         return true; // Indica que los datos son válidos
     }
 
+
+
+    
+
     const guardar= async ()=>{
         if(!verificarDatosVacios()){
             return;
@@ -83,28 +87,28 @@ export function EditarEmpleado(){
 
 
 
-    
+
     return (
         <Container className="mt-5">
             <Row>
                 <Col sm={{size:8, offset:2}}>
-                    <h4>Editar Empleado</h4>
-                    <hr />
+                    <h4 style={{ color: "black" }}>Editar Empleado</h4>
+                    <hr style={{ color: "blue" }}/>
                     <Form action="">
 
                         <FormGroup>
-                            <Label>Nombre</Label>
+                            <Label style={{ color: "black" }}>Nombre</Label>
                             <Input type="text" name="nombre" onChange={inputChangeValue} value={empleado.nombre}></Input>
                         </FormGroup>
 
 
                         <FormGroup>
-                            <Label>Correo</Label>
+                            <Label style={{ color: "black" }}>Correo</Label>
                             <Input type="text" name="correo" onChange={inputChangeValue} value={empleado.correo}></Input>
                         </FormGroup>
 
                         <FormGroup>
-                            <Label>Sueldo</Label>
+                            <Label style={{ color: "black" }}>Sueldo</Label>
                             <Input type="number" name="sueldo" onChange={inputChangeValue} value={empleado.sueldo}></Input>
                         </FormGroup>
                     </Form>

@@ -54,7 +54,7 @@ const Eliminar=(id:number)=>{
         <Row>
             <Col sm={{size:8, offset:2}}>
                 
-                <h4>Lista de Empleados</h4>
+                <h4 style={{ color: "black" }}>Lista de Empleados</h4>
                 <hr />
                 <Link className="btn btn-success mb-3" to= "/nuevoempleado">Nuevo Empleado</Link>
 
