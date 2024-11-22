@@ -11,7 +11,7 @@ import { IoMdHome } from "react-icons/io";
 
 import { RiLogoutCircleRLine } from "react-icons/ri";
 
-import logoImg from "../../assets/images/react.png";
+// import logoImg from "../../assets/images/react.png";     ya no se usa pero lo dejo por cualquier cosa xd
 import logo2 from "../../assets/images/newlogo.jpeg"
 import userImg from "../../assets/images/eu.jpg";
 
@@ -33,7 +33,7 @@ export function SideBar() {
 
 							<img src={logo2} alt="Eu" />
 
-							{/* Links principais do app */}
+							{/* Links principales de la App */}
 							<ul>
 								<a href="/" title="Home">
 									<IoMdHome />
@@ -50,7 +50,7 @@ export function SideBar() {
 							</ul>
 						</nav>
 						<div>
-							{/* Icones que pode não ser tão principais no app */}
+							{/* Iconos que pueden no ser de la app */}
 							<ul>
 								<a href="/" title="Notificações">
 									<IoNotificationsSharp />
